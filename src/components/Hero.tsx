@@ -275,12 +275,12 @@ export default function Hero() {
               {/* Floaters (Icons showing channels) */}
               <div className="absolute top-4 left-4 p-2 rounded-lg glass-panel border border-slate-800 flex items-center justify-center">
                 <a href={heroData.linkedinUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-accent transition-colors">
-                  <Linkedin className="w-5 h-5" />
+                  <LinkedinIcon className="w-5 h-5" />
                 </a>
               </div>
               <div className="absolute bottom-4 right-4 p-2 rounded-lg glass-panel border border-slate-800 flex items-center justify-center">
                 <a href={heroData.githubUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-accent transition-colors">
-                  <Github className="w-5 h-5" />
+                  <GithubIcon className="w-5 h-5" />
                 </a>
               </div>
             </motion.div>
