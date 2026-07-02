@@ -234,7 +234,7 @@ export default function Projects() {
                     rel="noreferrer"
                     className="px-4 py-2 rounded bg-slate-950 text-slate-300 border border-slate-900 hover:border-slate-800 hover:text-white transition-all text-xs flex items-center gap-2 cursor-pointer"
                   >
-                    <Github className="w-3.5 h-3.5" />
+                    <GithubIcon className="w-3.5 h-3.5" />
                     Inspect PoC Code
                   </a>
                 )}
