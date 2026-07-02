@@ -240,7 +240,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative w-full max-w-sm aspect-[4/3] sm:aspect-square rounded-2xl glass-panel border border-slate-800/85 p-3 shadow-[0_0_50px_rgba(0,240,255,0.08)] bg-slate-950/40 backdrop-blur-md overflow-visible flex items-center justify-center group hover:border-accent/30 transition-all duration-500"
+              className="relative w-full aspect-[4/3] sm:aspect-square rounded-2xl glass-panel border border-slate-800/85 p-3 shadow-[0_0_50px_rgba(0,240,255,0.08)] bg-slate-950/40 backdrop-blur-md overflow-visible flex items-center justify-center group hover:border-accent/30 transition-all duration-500"
             >
               {/* Card Glow Background */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
