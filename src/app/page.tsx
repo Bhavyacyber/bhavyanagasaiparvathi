@@ -33,7 +33,7 @@ export default function Home() {
       <footer className="bg-[#05080e] border-t border-slate-900 py-8 font-mono text-[10px] text-slate-500 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-2">
           <div>
-            &copy; {new Date().getFullYear()} Bhavya Parvathi. All systems secured.
+            &copy; {new Date().getFullYear()} iTelematics Software Private Limited. All systems secured.
           </div>
           <div>
             Built with Next.js &middot; Tailwind CSS &middot; Framer Motion &middot; TypeScript

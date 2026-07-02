@@ -7,11 +7,11 @@ import { useActiveSection } from '../hooks/useActiveSection';
 const navItems = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'expertise', label: 'Expertise' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'timeline', label: 'Timeline' },
-  { id: 'certifications', label: 'Certs' },
+  { id: 'skills', label: 'Features' },
+  { id: 'expertise', label: 'Architecture' },
+  { id: 'projects', label: 'Applications' },
+  { id: 'timeline', label: 'Roadmap' },
+  { id: 'certifications', label: 'Standards' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScrollTo('hero')}>
             <Shield className="w-6 h-6 text-accent animate-pulse" />
             <span className="font-mono text-sm tracking-widest font-bold text-white uppercase">
-              Bhavya<span className="text-accent">.Security</span>
+              iTelematics<span className="text-accent">.Aerospace</span>
             </span>
           </div>
 

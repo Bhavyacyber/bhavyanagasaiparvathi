@@ -28,10 +28,10 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-xs font-mono text-accent uppercase tracking-widest text-glow">
-            Validation Records
+            Deployments & Use Cases
           </h2>
           <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 font-sans tracking-tight">
-            Security Vulnerability Dossiers
+            Mission-Critical Security Dossiers
           </h3>
           <div className="w-12 h-1 bg-accent mx-auto mt-4 rounded-full" />
         </div>
@@ -84,17 +84,17 @@ export default function Projects() {
             <div className="lg:col-span-4 space-y-6">
               <div>
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
-                  Dossier Status
+                  Certification Status
                 </span>
                 <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-1 rounded bg-slate-900 border border-slate-850 text-[10px] font-mono text-accent-green">
                   <FileCheck className="w-3.5 h-3.5" />
-                  <span>VAPT Report Compiled</span>
+                  <span>DO-356 / ISO 21434 Compliant</span>
                 </div>
               </div>
 
               <div>
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
-                  Target Stack
+                  System Protocols
                 </span>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {activeProject.tools.map((tool, idx) => (
@@ -127,7 +127,7 @@ export default function Projects() {
 
               <div>
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
-                  Threat Intel Vectors
+                  Threat Vectors
                 </span>
                 <div className="mt-2 space-y-1.5 font-mono text-[10px] text-slate-400">
                   {activeProject.mitreMapping.map((mitre, idx) => (
@@ -151,7 +151,7 @@ export default function Projects() {
 
               <div>
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
-                  Associated Telemetry Logs
+                  Telemetry Logs
                 </span>
                 <div className="flex flex-wrap gap-1.5 mt-2">
                   {activeProject.logSources.map((source, idx) => (
@@ -181,7 +181,7 @@ export default function Projects() {
               <div className="space-y-4 font-sans text-sm">
                 <div>
                   <span className="text-[10px] font-mono text-accent uppercase tracking-widest block">
-                    1. Security Objective & Problem
+                    1. Mission Objective & Problem
                   </span>
                   <p className="text-slate-300 mt-1 leading-relaxed">
                     {activeProject.problem}
@@ -190,7 +190,7 @@ export default function Projects() {
 
                 <div>
                   <span className="text-[10px] font-mono text-accent uppercase tracking-widest block">
-                    2. Technical Actions Taken
+                    2. Architecture & Design Implementation
                   </span>
                   <p className="text-slate-300 mt-1 leading-relaxed">
                     {activeProject.action}
@@ -199,7 +199,7 @@ export default function Projects() {
 
                 <div>
                   <span className="text-[10px] font-mono text-accent uppercase tracking-widest block">
-                    3. Analysis & Findings
+                    3. Safety & Cyber Security Analysis
                   </span>
                   <p className="text-slate-300 mt-1 leading-relaxed">
                     {activeProject.result}
@@ -208,7 +208,7 @@ export default function Projects() {
 
                 <div>
                   <span className="text-[10px] font-mono text-accent-green uppercase tracking-widest block">
-                    4. Mitigation & Remediation
+                    4. Fault Isolation & Mitigation
                   </span>
                   <p className="text-slate-350 mt-1 leading-relaxed">
                     {activeProject.remediation}
@@ -216,11 +216,11 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Recruiter Callout */}
+              {/* Platform Callout */}
               <div className="p-4 rounded-lg bg-slate-900 border border-slate-800 text-xs font-sans text-slate-300 leading-relaxed relative overflow-hidden">
                 <div className="absolute top-0 left-0 bottom-0 w-[4px] bg-accent" />
                 <span className="font-mono text-[9px] text-accent uppercase tracking-wider block mb-1">
-                  Recruiter Key Takeaway
+                  Platform Performance Takeaway
                 </span>
                 {activeProject.recruiterTakeaway}
               </div>
@@ -235,7 +235,7 @@ export default function Projects() {
                     className="px-4 py-2 rounded bg-slate-950 text-slate-300 border border-slate-900 hover:border-slate-800 hover:text-white transition-all text-xs flex items-center gap-2 cursor-pointer"
                   >
                     <GithubIcon className="w-3.5 h-3.5" />
-                    Inspect PoC Code
+                    Inspect Architecture Specs
                   </a>
                 )}
                 <a
@@ -243,7 +243,7 @@ export default function Projects() {
                   className="px-4 py-2 rounded bg-accent text-slate-950 font-bold hover:bg-[#00d0ff] hover:shadow-[0_0_15px_rgba(0,240,255,0.25)] transition-all text-xs flex items-center gap-2 cursor-pointer"
                 >
                   <FileText className="w-3.5 h-3.5" />
-                  Request Full VAPT Report
+                  Request Demo & Technical Brief
                 </a>
               </div>
 

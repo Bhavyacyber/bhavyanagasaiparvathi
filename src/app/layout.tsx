@@ -13,13 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bhavya Parvathi | Cybersecurity Specialist & Blue Team Analyst",
-  description: "Bhavya Parvathi is a Cybersecurity professional specializing in Blue Team Operations, Threat Detection, SIEM Triaging, and Offensive API / Web Security validation.",
-  keywords: ["Bhavya Parvathi", "Cybersecurity", "SOC Analyst", "Blue Team", "Threat Detection", "API Security", "VAPT", "Splunk", "Wireshark", "DPDPA 2023"],
-  authors: [{ name: "Bhavya Parvathi" }],
+  title: "Aerospace Battery Intelligence & Cybersecurity Platform | iTelematics",
+  description: "AI-powered Digital Twin platform for aerospace, aviation, defense, satellites, eVTOLs, and drones. Real-time battery diagnostics, predictive maintenance, secure telemetry, and quantum-ready cybersecurity.",
+  keywords: [
+    "Aerospace battery cybersecurity",
+    "battery intrusion detection",
+    "secure battery telemetry",
+    "BMS threat detection",
+    "secure OTA EV",
+    "AI threat intelligence",
+    "post-quantum telemetry security",
+    "ISO 21434",
+    "UNECE R155",
+    "UNECE R156",
+    "DO-178C",
+    "DO-254",
+    "DO-356",
+    "iTelematics",
+    "battery diagnostics"
+  ],
+  authors: [{ name: "iTelematics Software Private Limited" }],
   openGraph: {
-    title: "Bhavya Parvathi | Cybersecurity Specialist & Blue Team Analyst",
-    description: "Cybersecurity Analyst specializing in SOC Operations, Threat Detection, and Web/API Pentesting.",
+    title: "Aerospace Battery Intelligence & Cybersecurity Platform",
+    description: "AI-Powered Digital Twin Platform for Aerospace Battery Diagnostics, Battery Health Intelligence, Predictive Maintenance, Secure Telemetry, and Quantum-Ready Cybersecurity.",
     type: "website",
     locale: "en_US",
   },
@@ -32,23 +48,16 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Bhavya Parvathi",
-    "jobTitle": "Cybersecurity Specialist",
-    "description": "Cybersecurity professional specializing in Blue Team Operations and Web/API Security Validation.",
-    "knowsAbout": [
-      "SOC Operations",
-      "Threat Detection",
-      "SIEM Triaging",
-      "Web Application Penetration Testing",
-      "API Security",
-      "DPDPA 2023 Compliance Mapping",
-      "Network Segmentation"
-    ],
-    "sameAs": [
-      "https://linkedin.com/in/bhavya-parvathi",
-      "https://github.com/bhavyaparvathi"
-    ]
+    "@type": "SoftwareApplication",
+    "name": "Aerospace Battery Intelligence & Cybersecurity Platform",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Embedded OS / RTOS / Linux",
+    "description": "AI-powered Digital Twin platform for aerospace, aviation, defense, satellites, eVTOLs, and drones. Real-time battery diagnostics, predictive maintenance, secure telemetry, and quantum-ready cybersecurity.",
+    "author": {
+      "@type": "Organization",
+      "name": "iTelematics Software Private Limited",
+      "url": "https://itelematics.com"
+    }
   };
 
   return (

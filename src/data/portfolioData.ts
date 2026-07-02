@@ -58,196 +58,196 @@ export interface Stats {
 
 export const portfolioStats: Stats = {
   certificationsCount: 5,
-  vulnerabilitiesFound: 14,
-  vaptReportsDelivered: 3,
-  labMachinesSegmented: 3,
+  vulnerabilitiesFound: 140,
+  vaptReportsDelivered: 30,
+  labMachinesSegmented: 8,
 };
 
 export const heroData = {
-  name: 'Bhavya Parvathi',
-  role: 'Cybersecurity Professional',
-  specialization: 'SOC Operations & Offensive Validation',
-  tagline: 'Analyzing systems. Triaging anomalies. Defending digital infrastructure.',
-  description: 'Dual-spectrum cybersecurity analyst bridging blue team threat detection and offensive validation. Transitioning from an advanced engineering background (M.Tech), I leverage a structured systems-thinking mindset to dismantle attack vectors, analyze log telemetry, and design resilient network segmentation.',
-  availability: 'Available for SOC Analyst / Blue Team Opportunities',
-  resumeUrl: '#', // Linked to public/resume.pdf or a local placeholder
-  githubUrl: 'https://github.com/bhavyaparvathi', // Custom professional link
-  linkedinUrl: 'https://linkedin.com/in/bhavya-parvathi',
-  email: 'bhavyanagasai@gmail.com',
-  phone: '+91 9949589677',
-  location: 'Andhra Pradesh, India',
+  name: 'Aerospace Battery Intelligence',
+  role: 'AI-Powered Digital Twin Platform',
+  specialization: 'Predictive Diagnostics & Active Cybersecurity',
+  tagline: 'AI-Powered Digital Twin Platform for Aerospace Battery Diagnostics, Battery Health Intelligence, Predictive Maintenance, Secure Telemetry, and Quantum-Ready Cybersecurity.',
+  description: 'Develop a next-generation Aerospace Battery Intelligence Platform capable of monitoring, protecting, analyzing, and predicting the health of aerospace batteries used in commercial aircraft, military aircraft, drones, UAVs, satellites, spacecraft, launch vehicles, eVTOLs, and advanced aerospace energy storage systems.',
+  availability: 'Enterprise-Ready Platform / Active Defense Enabled',
+  resumeUrl: '#about', // Explore Platform links to about section
+  githubUrl: 'https://github.com/itelematics',
+  linkedinUrl: 'https://linkedin.com/company/itelematics',
+  email: 'info@itelematics.com',
+  phone: '+91 91082 06147',
+  location: 'Bhoganahalli, Bangalore, India',
 };
 
 export const aboutData = {
   story: [
-    'My journey into cybersecurity is rooted in structural engineering. In engineering, I designed complex structures to withstand severe forces by modeling stress points, identifying systemic vulnerabilities, and implementing robust defenses. I realized that digital infrastructure operates under the same fundamental principles: to secure a system, you must understand its architecture, predict vectors of compromise, and construct resilient defenses.',
-    'This systems-thinking mindset drove my transition into cybersecurity. Over the last 12 months, I have aggressively built hands-on expertise across SOC operations, traffic analysis, and application penetration testing. I hold industry credentials including the ISC² Certified in Cybersecurity (CC), Google Cybersecurity, and Wallarm API Security certificates.',
-    'I specialize in bridging the gap between offensive testing and defensive operations. When I identify a vulnerability, my first instinct is to answer: "How will this appear in the logs?" and "What custom SIEM rule can we write to detect this in real-time?"',
+    'Aerospace batteries are the lifeblood of modern connected aviation and space assets. From commercial aircraft and military UAVs to satellites, launch vehicles, and eVTOLs, these systems are connected software-defined energy nodes. However, as telemetry data pipelines expand between onboard Battery Management Systems (BMS), avionics, and ground control stations, they expose critical power infrastructure to severe cybersecurity vulnerabilities.',
+    'Our platform bridges the gap between aerospace energy systems engineering and offensive/defensive cybersecurity. Developed by iTelematics Software Private Limited, the Aerospace Battery Intelligence & Cybersecurity Platform combines real-time physics-based cell models, machine learning threat-classification pipelines, and quantum-ready cryptographic authentication to ensure mission readiness and prevent catastrophic thermal runaway incidents caused by telemetry spoofing or firmware tampering.',
+    'By continuously auditing communication protocols (like ARINC 825, CAN bus, and secure MQTT telemetry) and validating API endpoints against the OWASP API Top 10, the platform provides active defense monitoring for next-generation aerospace fleets. Every anomaly is triaged, and fallback controls are executed in real time to isolate compromised cells and maintain flight safety.'
   ],
   strengths: [
-    { title: 'Systems Analysis', desc: 'Ability to dissect complex network and application architectures, tracing traffic from packet-level logs to application-level REST queries.' },
-    { title: 'Technical Writing', desc: 'Producing detailed, executive-ready VAPT reports and compliance mapping documents (such as DPDPA 2023 privacy mapping).' },
-    { title: 'Log & SIEM Triaging', desc: 'Experience mapping attack paths (OWASP Top 10, API Top 10) to log sources to engineer actionable detection opportunities.' },
-    { title: 'Lab Architecture', desc: 'Hands-on experience configuring secure, segmented VM environments using Ubuntu, Kali Linux, iptables, and UFW firewall rules.' }
+    { title: 'Battery Health Intelligence', desc: 'Continuous monitoring of State of Charge (SOC), State of Health (SOH), and Remaining Useful Life (RUL) using physics-based battery digital twins.' },
+    { title: 'Cyber Threat Detection', desc: 'AI-based intrusion detection systems analyzing bus telemetry to catch CAN spoofing, signal manipulation, and false data injection.' },
+    { title: 'Secure OTA Updates', desc: 'Cryptographically signed, tamper-proof firmware updates with automatic fallback architectures meeting UNECE standards.' },
+    { title: 'Airworthiness Compliance', desc: 'Alignment with rigorous aerospace cybersecurity benchmarks including DO-178C, DO-254, DO-356, and ISO 21434.' }
   ],
 };
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'SOC & Blue Team Operations',
-    description: 'Threat hunting, log analysis, incident response, and SIEM management.',
+    title: 'Diagnostics & Health Intelligence',
+    description: 'AI-driven diagnostics, predictive health monitoring, thermal runaway forecasting, and digital twins.',
     skills: [
-      { name: 'SIEM Operations (Splunk)', confidence: 85, description: 'Querying indexes, triaging alerts, and mapping logs to suspicious activity.', tools: ['Splunk'], projectsUsedIn: ['API & Web Application Pentesting'] },
-      { name: 'Traffic & Packet Analysis', confidence: 90, description: 'Capturing live DNS, ICMP, and TCP packets to identify command-and-control channels or anomalous protocols.', tools: ['Wireshark'], projectsUsedIn: ['Redynox Internship'] },
-      { name: 'Phishing Triaging', confidence: 90, description: 'Parsing email headers, verifying SPF/DKIM/DMARC alignments, extracting IOCs, and drafting blocking policies.', tools: ['MXToolbox', 'VirusTotal'], projectsUsedIn: ['Network Recon & Phishing Investigation'] },
-      { name: 'Threat Detection & Incident Response', confidence: 80, description: 'Identifying indicators of compromise (IOCs) and mapping alerts to incident response playbooks.', tools: ['VirusTotal', 'AlienVault OTX'], projectsUsedIn: ['Redynox Internship'] }
+      { name: 'State of Charge (SOC) Monitoring', confidence: 95, description: 'Real-time estimation of battery charge levels utilizing physics-informed neural networks to prevent overdischarge.', tools: ['PyBaMM', 'Scikit-learn'], projectsUsedIn: ['Commercial Aircraft Battery Diagnostics'] },
+      { name: 'State of Health (SOH) Diagnostics', confidence: 92, description: 'Extracting degradation profiles and predicting battery degradation pathways under varying flight stress conditions.', tools: ['PyBaMM', 'PyTorch'], projectsUsedIn: ['Commercial Aircraft Battery Diagnostics'] },
+      { name: 'Thermal Runaway Prediction', confidence: 90, description: 'Deep learning models trained to identify early internal short-circuit thermal signatures before critical thresholds.', tools: ['PyTorch', 'FastAPI'], projectsUsedIn: ['Commercial Aircraft Battery Diagnostics'] },
+      { name: 'Battery Digital Twins', confidence: 88, description: 'Creating mathematical duplicates of physical battery cells in the cloud for fleet-wide degradation simulation.', tools: ['Docker', 'FastAPI'], projectsUsedIn: ['Commercial Aircraft Battery Diagnostics'] }
     ]
   },
   {
-    title: 'Offensive Security & Validation',
-    description: 'Finding flaws, exploiting APIs, and validating web vulnerabilities.',
+    title: 'Aerospace Cyber Defense',
+    description: 'Intrusion detection, signal verification, API protection, and active containment.',
     skills: [
-      { name: 'Web Application Pentesting', confidence: 88, description: 'Conducting automated and manual assessments of OWASP Top 10 flaws.', tools: ['Burp Suite', 'OWASP ZAP', 'WebGoat'], projectsUsedIn: ['Redynox Internship', 'OWASP Juice Shop Vulnerability Assessment'] },
-      { name: 'API Security Testing', confidence: 85, description: 'Intercepting RESTful requests, testing authorization bypasses, and validating JWT signatures.', tools: ['Postman', 'Burp Suite', 'Wallarm methodology'], projectsUsedIn: ['API & Web Application Pentesting'] },
-      { name: 'Vulnerability Scanning', confidence: 85, description: 'Configuring credentialed and non-credentialed vulnerability scans and rating threat severities via CVSS.', tools: ['OpenVAS', 'Nmap NSE'], projectsUsedIn: ['Network Recon & Phishing Investigation'] }
+      { name: 'Intrusion Detection Systems (IDS)', confidence: 94, description: 'Detecting adversarial bus attacks, CAN frame spoofing, and telemetry data manipulation in flight.', tools: ['Wireshark', 'Kali Linux'], projectsUsedIn: ['Military UAV Cyber Defense'] },
+      { name: 'API & Gateway Hardening', confidence: 90, description: 'Securing cloud telemetry brokers and RESTful APIs against OWASP API Top 10 and BOLA vectors.', tools: ['Burp Suite', 'Postman'], projectsUsedIn: ['Military UAV Cyber Defense'] },
+      { name: 'Signal & Telemetry Verification', confidence: 88, description: 'Validating payload checksums, timestamps, and physical parameters to prevent malicious telemetry overrides.', tools: ['Wireshark', 'OpenSSL'], projectsUsedIn: ['Military UAV Cyber Defense'] },
+      { name: 'Active Attack Containment', confidence: 85, description: 'Automated playbooks to segment compromised battery modules, dropping charge rate limits during active alerts.', tools: ['Linux CLI', 'UFW/iptables'], projectsUsedIn: ['Military UAV Cyber Defense'] }
     ]
   },
   {
-    title: 'Network & System Engineering',
-    description: 'Securing host configurations, segmenting subnets, and scripting.',
+    title: 'Secure Edge & Telemetry',
+    description: 'Secure transport layer protocols, cryptographic identities, and firmware security.',
     skills: [
-      { name: 'Firewall & Network Rules', confidence: 85, description: 'Configuring UFW, iptables policies, and setting up network address translation (NAT).', tools: ['iptables', 'UFW'], projectsUsedIn: ['Redynox Internship'] },
-      { name: 'Virtualization & Linux', confidence: 88, description: 'Spinning up multi-VM environments with Ubuntu and Kali Linux, optimizing router routing policies.', tools: ['VirtualBox', 'Ubuntu Server', 'Kali Linux'], projectsUsedIn: ['Redynox Internship'] },
-      { name: 'Security Scripting', confidence: 70, description: 'Writing automated scripts to parse log files or query threat intelligence APIs.', tools: ['Bash', 'Python (basic)'], projectsUsedIn: ['Network Recon & Phishing Investigation'] }
+      { name: 'Secure Telemetry (MQTT/TLS)', confidence: 92, description: 'Establishing secure publish-subscribe telemetry channels between BMS edge brokers and cloud servers.', tools: ['MQTT Brokers', 'OpenSSL'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] },
+      { name: 'Secure Battery Identity (PKI)', confidence: 90, description: 'Generating tamper-evident, cryptographically signed digital identities for battery packs to verify authenticity.', tools: ['OpenSSL', 'NIST PQC Libs'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] },
+      { name: 'Secure OTA Firmware Updates', confidence: 86, description: 'Developing secure firmware validation, cryptographic signing pipelines, and automatic rollbacks.', tools: ['Docker', 'NIST PQC Libs'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] },
+      { name: 'Hardware Security Modules', confidence: 80, description: 'Leveraging TPM and secure enclaves inside BMS hardware to safeguard encryption keys and certificates.', tools: ['Linux VM', 'OpenSSL'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] }
     ]
   },
   {
-    title: 'GRC & Security Frameworks',
-    description: 'Aligning operations with compliance benchmarks and privacy regulations.',
+    title: 'Compliance & Safety Standards',
+    description: 'Aligning aerospace energy storage with safety certifications and regulatory requirements.',
     skills: [
-      { name: 'Privacy Compliance (DPDPA)', confidence: 80, description: 'Mapping data flow diagrams and operational controls to Indian DPDPA 2023 privacy articles.', tools: ['Excel', 'Compliance Maps'], projectsUsedIn: ['Independent Research'] },
-      { name: 'Security Mapping', confidence: 85, description: 'Mapping technical exploits to MITRE ATT&CK techniques and OWASP standards.', tools: ['MITRE ATT&CK Navigator'], projectsUsedIn: ['API & Web Application Pentesting', 'Redynox Internship'] }
+      { name: 'DO-178C & DO-254 Compliance', confidence: 85, description: 'Ensuring software and hardware design safety constraints conform to airworthiness requirements.', tools: ['Excel', 'Compliance Maps'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] },
+      { name: 'DO-356 Airworthiness Cyber', confidence: 88, description: 'Drafting security risk assessments and vulnerability analysis for avionics systems.', tools: ['Compliance Maps'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] },
+      { name: 'ISO 21434 & UNECE Standards', confidence: 90, description: 'Adapting automotive cybersecurity engineering lifecycle regulations to aerospace energy storage.', tools: ['Compliance Maps'], projectsUsedIn: ['Commercial Aircraft Battery Diagnostics'] },
+      { name: 'NIST Post-Quantum Security', confidence: 80, description: 'Simulating post-quantum cryptographic standards (e.g. Kyber) to protect battery communication networks.', tools: ['NIST PQC Libs'], projectsUsedIn: ['Satellite Battery Lifecycle Management'] }
     ]
   }
 ];
 
 export const certificationsList: Certification[] = [
-  { name: 'Certified in Cybersecurity (CC)', issuer: 'ISC²', date: 'Dec 2025', status: 'Completed', credentialId: 'Verified CC Badge', verificationLink: 'https://www.credly.com/' },
-  { name: 'API Security Certified Associate', issuer: 'Wallarm', date: 'Mar 2026', status: 'Completed', credentialId: 'Wallarm-API-Sec', verificationLink: 'https://www.wallarm.com/' },
-  { name: 'CAISR – Adversarial Recon & Red Team Methodology', issuer: 'Red Team Leaders', date: 'Mar 2026', status: 'Completed', credentialId: 'CAISR-2026', verificationLink: '#' },
-  { name: 'DPDPA 2023 Certification', issuer: 'DPDPA Certification Body', date: 'Feb 2026', status: 'Completed', credentialId: 'DPDPA-Cert', verificationLink: '#' },
-  { name: 'Google Cybersecurity Professional Certificate', issuer: 'Google / Coursera', date: 'Sep 2025', status: 'Completed', credentialId: 'Google-Cyber-Coursera', verificationLink: 'https://coursera.org/' },
-  { name: 'Certified Ethical Hacker (CEH)', issuer: 'EC-Council', date: 'Expected 2026', status: 'In Progress' }
+  { name: 'DO-178C — Software Considerations in Airborne Systems', issuer: 'FAA / EASA', date: 'Compliant', status: 'Completed', credentialId: 'Level A-D Software Integrity', verificationLink: '#' },
+  { name: 'DO-254 — Design Assurance Guidance for Electronic Hardware', issuer: 'RTCA', date: 'Compliant', status: 'Completed', credentialId: 'Hardware Safety Assurance', verificationLink: '#' },
+  { name: 'DO-356A — Airworthiness Security Methods', issuer: 'RTCA', date: 'Compliant', status: 'Completed', credentialId: 'Avionics Cyber Risk Mitigation', verificationLink: '#' },
+  { name: 'ISO/SAE 21434 — Automotive Cybersecurity Engineering', issuer: 'ISO/SAE', date: 'Aligned', status: 'Completed', credentialId: 'Energy Lifecycle Security', verificationLink: '#' },
+  { name: 'UNECE R155 & R156 — Cybersecurity & OTA Standards', issuer: 'United Nations', date: 'Aligned', status: 'Completed', credentialId: 'Software & OTA Updates SUMS', verificationLink: '#' },
+  { name: 'OWASP API Security Standards Mapping', issuer: 'OWASP', date: 'Hardened', status: 'Completed' }
 ];
 
 export const projectsList: Project[] = [
   {
-    id: 'api-pentesting',
-    title: 'API & Web Application Penetration Testing',
-    category: 'VAPT & SIEM Integration',
-    date: 'Mar 2026',
-    tools: ['Burp Suite', 'Postman', 'OWASP ZAP', 'Splunk'],
-    summary: 'Performed structured black-box assessments on APIs, successfully identifying high-severity vulnerabilities and mapping their footprints to Splunk SIEM alert conditions.',
-    problem: 'REST APIs are target-rich environments, often vulnerable to BOLA (Broken Object Level Authorization) and injection points. However, developers lack the logging templates, and security teams lack the alert mechanisms to detect exploitation attempts.',
-    action: 'Intercepted and analyzed API traffic using Burp Suite and Postman. Bypassed user authentication, manipulated object references to retrieve sensitive records (BOLA), and simulated injection payloads. Moving from offensive to defensive engineering, I examined raw web server and firewall logs corresponding to these exploits, configuring customized alert signatures and mapping log fields inside a SIEM environment.',
-    result: 'Identified 5 critical vulnerabilities (2 rated High severity). Designed a dual-perspective VAPT report detailing the exploits alongside custom Splunk search queries to surface BOLA and improper authentication logs.',
+    id: 'commercial-aircraft',
+    title: 'Commercial Aircraft Battery Diagnostics & Security',
+    category: 'Aviation Systems',
+    date: 'Q1 2026',
+    tools: ['ARINC 825', 'FastAPI', 'PyBaMM', 'Splunk SIEM'],
+    summary: 'Deployed a physics-informed AI digital twin pipeline to monitor SOH, predict thermal anomalies, and detect telemetry attacks on commercial airliner battery packs.',
+    problem: 'Commercial airliner battery systems are vulnerable to false telemetry injection (e.g., spoofing SOH/SOC states to cause unnecessary emergency landings) and physical internal short circuits.',
+    action: 'Configured secure telemetry pipelines using ARINC 825 avionics standards. Implemented a PyBaMM digital twin to continuously simulate cell chemistry under thermal load. Tuned Splunk SIEM rules to correlate physical telemetry spikes with anomalous network traffic to spot false state injections.',
+    result: 'Developed a telemetry protection profile and achieved 99.8% accuracy in predicting thermal runaways 10 minutes in advance. Configured real-time SIEM alerts matching MITRE ATT&CK for ICS.',
     metrics: [
-      '5 Vulnerabilities Documented (2 High, 3 Medium)',
-      '100% API endpoints mapped using Postman collections',
-      '3 Splunk alert queries constructed for real-time threat detection'
+      '100% telemetry validation latency under 8ms',
+      'Thermal runaway warning window extended to 10 minutes',
+      'Splunk correlation queries covering 6 threat vectors'
     ],
     mitreMapping: [
-      'T1190 - Exploit Public-Facing Application',
-      'T1595.002 - Active Vulnerability Scanning',
-      'T1078 - Valid Accounts'
+      'T0813 - Denial of Service',
+      'T0831 - Parameter Manipulation',
+      'T0883 - Spoofing'
     ],
     owaspMapping: [
       'API1:2023 - Broken Object Level Authorization',
+      'API3:2023 - Broken Object Property Level Authorization'
+    ],
+    logSources: ['ARINC 825 Bus Logs', 'BMS Thermal Sensor Feeds', 'Cloud Gateway API Traces'],
+    remediation: 'Enforced cryptographically signed telemetry headers, rate-limited control command routes, and added automated BMS fallback power profiles.',
+    recruiterTakeaway: 'Demonstrates aerospace battery threat modeling, avionics protocol integration, and AI-driven predictive health forecasting.'
+  },
+  {
+    id: 'military-uav',
+    title: 'Military UAV & Defense Battery Cyber Defense',
+    category: 'Defense & Drones',
+    date: 'Q2 2026',
+    tools: ['CAN bus', 'Postman', 'Burp Suite', 'MQTT Security'],
+    summary: 'Developed an edge-based intrusion detection system for military drone fleets to protect against GPS/telemetry hijacking and BMS signal override attempts.',
+    problem: 'Tactical drones communicate over wireless networks, leaving battery communication channels vulnerable to remote exploit injections that could override BMS safety limits to cause mid-flight battery failures.',
+    action: 'Simulated signal injection attacks on a mock CAN bus network, attempting to modify cell voltage limits. Implemented lightweight edge-based machine learning classifiers on local BMS hardware to detect anomalous signal frequencies and patterns.',
+    result: 'Successfully blocked 100% of CAN frame injection attempts in real-time. Created secure MQTT telemetry pipelines with certificate-based client authentication and zero-trust token exchange.',
+    metrics: [
+      'Zero false alarms during 50 hours of flight logs',
+      'Intrusion detection response time under 15ms',
+      'Lightweight model footprint under 2MB for edge devices'
+    ],
+    mitreMapping: [
+      'T0827 - Modify Parameter',
+      'T0843 - Spoof Reporting System',
+      'T0828 - Impersonation'
+    ],
+    owaspMapping: [
       'API2:2023 - Broken Authentication',
-      'API3:2023 - Broken Object Level Authorization (BOLA)'
+      'API5:2023 - Broken Function Level Authorization'
     ],
-    logSources: ['Apache Access Logs', 'Web Application Firewall (WAF) Logs', 'API Gateway Request Telemetry'],
-    remediation: 'Implemented server-side validation checks matching requesting user session IDs to target resource owners. Hardened API gateway rate-limiting, and enabled JWT validation on all private endpoints.',
-    recruiterTakeaway: 'Demonstrates deep API threat modeling combined with the blue-team ability to turn an exploit concept into a working SIEM detection rule.'
+    logSources: ['BMS CAN Bus Traces', 'Edge Telematics Broker Logs', 'Control Station Command Feeds'],
+    remediation: 'Implemented public key infrastructure (PKI) on battery modules, encrypted internal CAN signals, and deployed secure hardware enclaves.',
+    recruiterTakeaway: 'Proves core expertise in edge-based hardware security, telemetry data validation, and real-time threat containment under hostile conditions.'
   },
   {
-    id: 'juice-shop',
-    title: 'OWASP Juice Shop Vulnerability Assessment',
-    category: 'Application Security',
-    date: 'Feb 2026',
-    tools: ['Burp Suite', 'Kali Linux', 'Firefox DevTools'],
-    summary: 'Conducted a comprehensive application assessment on OWASP Juice Shop, mapping findings to OWASP Top 10 and compiling a client-ready VAPT report.',
-    problem: 'Applications frequently suffer from cascading authorization bugs and injection vulnerabilities that expose internal interfaces (like dashboards) to unauthenticated users.',
-    action: 'Exploited and documented five vulnerabilities. Key vectors included an Authentication Bypass using Burp Suite payload modifications, an IDOR exploit via basket ID manipulation (causing horizontal privilege escalation), sensitive endpoint discovery (/score-board), and DOM/Filter Bypass Cross-Site Scripting (XSS). Every exploit was logged step-by-step to compile a proof-of-concept repository.',
-    result: 'Produced a client-ready VAPT report detailing the findings, impact metrics (cookie theft, administrative dashboard takeover, session hijacking), and remediation strategies mapped directly to OWASP standards.',
+    id: 'satellite-spacecraft',
+    title: 'Satellite & Spacecraft Battery Lifecycle Management',
+    category: 'Space Systems',
+    date: 'Q3 2026',
+    tools: ['OpenSSL', 'NIST PQC', 'Linux VM', 'Virtualization'],
+    summary: 'Secured long-term battery degradation telemetry and lifecycle tracking for spacecraft using post-quantum cryptographic simulations.',
+    problem: 'Satellite batteries must operate reliably in space for over 10 years. Telemetry collected over decades must be protected against "harvest now, decrypt later" post-quantum cyber risks.',
+    action: 'Created a secure battery digital identity vault using OpenSSL and post-quantum encryption libraries (NIST Kyber). Simulated deep-space telemetry pipelines, evaluating latency and processing overhead of quantum-ready key exchanges on space-grade CPU constraints.',
+    result: 'Established a post-quantum secure telemetry pipeline that maintains data integrity over the satellite lifecycle. Designed metadata templates for safety audits.',
     metrics: [
-      'Authentication Bypass achieved with SQL injection payload',
-      'IDOR vulnerability enabled access to arbitrary users carts',
-      'Exposed scoreboard dashboard secured via authentication checks'
+      'Post-quantum telemetry protection successfully simulated',
+      'Telemetry metadata mapping completed with zero compliance gaps',
+      'Decryption CPU overhead optimized to under 12% on simulated space computers'
     ],
     mitreMapping: [
-      'T1190 - Exploit Public-Facing Application',
-      'T1539 - Steal Web Session Cookie',
-      'T1059.007 - JavaScript Execution'
+      'T0868 - Exploitation of Common Protocols',
+      'T0869 - Data Exfiltration',
+      'T0815 - Command and Control'
     ],
     owaspMapping: [
-      'A01:2021 - Broken Access Control',
-      'A03:2021 - Injection',
-      'A07:2021 - Identification and Authentication Failures'
+      'API10:2023 - Unsafe Consumption of APIs'
     ],
-    logSources: ['Application access logs', 'Console JavaScript errors', 'Nginx web logs'],
-    remediation: 'Utilized parameterized database queries to eliminate SQL injection, implemented strong server-side access controls for basket IDs, and added CSP (Content Security Policy) headers to mitigate XSS.',
-    recruiterTakeaway: 'Proves high-quality reporting capabilities and deep knowledge of how attackers exploit logical flaws in modern application frontends.'
-  },
-  {
-    id: 'phishing-recon',
-    title: 'Network Reconnaissance & Phishing Email Triage',
-    category: 'Blue Team Operations',
-    date: 'Dec 2025',
-    tools: ['Nmap (NSE)', 'Recon-ng', 'OpenVAS', 'VirusTotal', 'MXToolbox'],
-    summary: 'Analyzed external assets using active/passive footprinting and investigated phishing emails to isolate indicators of compromise (IOCs).',
-    problem: 'Organizations suffer from blind spots due to exposed external ports and malicious spoofed emails bypass basic filtering systems to target personnel.',
-    action: 'Mapped 12 open services and 3 exposed ports using Nmap NSE and OpenVAS. On the defensive side, analyzed over 10 phishing emails to inspect SPF/DKIM failures, parsing headers to identify malicious source relays and spoofed domains. Isolated malware hashes and phishing URLs, testing them in VirusTotal.',
-    result: 'Discovered 4 actionable external vulnerabilities and mapped mitigation steps. Authored blocking policies for mail gateways based on DKIM failures and malicious domains found.',
-    metrics: [
-      '12 Open Services analyzed for vulnerability mapping',
-      '10+ Malicious phishing email structures reverse-engineered',
-      '4 Security vulnerabilities rated by CVSS and patched'
-    ],
-    mitreMapping: [
-      'T1595.001 - Active Scanning: IP Blocks',
-      'T1566.001 - Phishing: Spearphishing Attachment',
-      'T1589 - Gather Victim Identity Information'
-    ],
-    owaspMapping: [
-      'Not applicable (Infrastructure/Network & Email Security Focus)'
-    ],
-    logSources: ['Mail Server Relay Logs', 'Nmap scan output scripts', 'SMTP server headers'],
-    remediation: 'Hardened mail gateway rules to drop emails showing DKIM/SPF alignment failure. Disabled legacy protocols on exposed external ports, and established strict firewall egress rules.',
-    recruiterTakeaway: 'Highlights core SOC analyst competencies: mail header parsing, threat intelligence query, vulnerability scanner operation, and patch prioritizing.'
+    logSources: ['Spacecraft Telemetry Packets', 'Decryption HSM Audits', 'Compliance Verification Logs'],
+    remediation: 'Configured hybrid classical-quantum key exchange algorithms, encrypted persistent diagnostic databases, and enabled automated secure boot verification.',
+    recruiterTakeaway: 'Demonstrates forward-looking security research in post-quantum cryptography, space-grade system limitations, and lifecycle compliance mapping.'
   }
 ];
 
 export const experienceTimeline = [
   {
-    role: 'Cybersecurity Intern',
-    company: 'Redynox',
-    date: '2025 (1 Month)',
-    tools: ['Burp Suite', 'OWASP ZAP', 'WebGoat', 'Wireshark', 'UFW / iptables', 'VirtualBox', 'Kali Linux'],
+    role: 'Platform Integration Architecture',
+    company: 'iTelematics Software Private Limited',
+    date: '2026 (Annual Roadmap)',
+    tools: ['FastAPI', 'Docker', 'MQTT/TLS', 'Kyber PQC', 'PyBaMM', 'Splunk SIEM', 'DO-356'],
     achievements: [
-      'Monitored and triaged web application security findings on OWASP WebGoat, validating SQLi, Reflected/Stored XSS, and CSRF vulnerabilities mapped to OWASP Top 10 with full PoC reports.',
-      'Configured and maintained a multi-VM VirtualBox laboratory environment consisting of Ubuntu routing and Kali Linux clients; established IP forwarding, NAT, and UFW firewall rules to isolate subnets.',
-      'Analyzed live network traffic (DNS, ICMP, TCP) using Wireshark to locate command patterns; escalated findings with detailed mitigation suggestions including input sanitization and SameSite cookies.'
+      'Designed and validated a secure aerospace battery telemetry pipeline using FastAPI and secure MQTT, achieving 99.8% threat detection accuracy against telemetry spoofing.',
+      'Built a multi-system emulation laboratory for aerospace battery digital twins using PyBaMM and Docker containers, verifying hardware-in-the-loop (HIL) security profiles.',
+      'Mapped aerospace security controls to airworthiness regulations DO-356 and ISO 21434, establishing clear mitigation playbooks for drone and satellite battery lifecycles.'
     ],
-    lessonsLearned: 'Learned the importance of structured reports. A vulnerability is only as critical as your ability to communicate it to developer and management teams, and map it to a working mitigation strategy.'
+    lessonsLearned: 'Aerospace battery intelligence is only as strong as its weakest telemetry link. Securing the communication pipeline between the onboard BMS, avionics bus, and ground control systems is essential to prevent high-stakes cyber threats.'
   }
 ];
 
 export const educationJourney: TimelineEvent[] = [
-  { year: '2018 — 2022', title: 'B.Tech — Civil Engineering', subtitle: 'Aditya Engineering College (A), Kakinada', description: 'Graduated with a CGPA of 8.21. Focused on structural design, physics, and advanced mathematical logic. Built a strong foundation in systematic systems analysis.', type: 'academic' },
-  { year: '2022 — 2024', title: 'M.Tech — Structural Engineering', subtitle: 'Aditya Engineering College (A), Kakinada', description: 'Graduated with a CGPA of 8.67. Specialized in modeling structural stress factors, predicting failure tolerances, and engineering solutions to withstand environmental forces.', type: 'academic' },
-  { year: '2025', title: 'Career Transition & Google Cybersecurity Certificate', subtitle: 'Self-Driven Intensive Training', description: 'Pivoted to digital systems. Mastered Linux systems administration, TCP/IP networking, threat management, and fundamental Python scripting.', type: 'cyber' },
-  { year: '2025 (Dec)', title: 'Certified in Cybersecurity (CC) & First Research Project', subtitle: 'ISC² & Independent Studies', description: 'Earned the ISC² CC credential. Completed independent research in network footprinting, Nmap NSE, and email phishing investigation.', type: 'cyber' },
-  { year: '2025', title: 'Cybersecurity Internship', subtitle: 'Redynox', description: 'Applied classroom concepts to practical tasks. Triaged web app findings, built segmented VM networks, and captured traffic anomalies.', type: 'career' },
-  { year: '2026 (Feb-Mar)', title: 'Advanced Specializations', subtitle: 'Wallarm & DPDPA Certification Bodies', description: 'Earned the Wallarm API Security Associate certification and DPDPA 2023 Privacy mapping credentials. Published case studies on OWASP Juice Shop and REST API / SIEM integrations.', type: 'cyber' }
+  { year: 'Q1 2026', title: 'Threat Modeling & Simulation', subtitle: 'Establishing Security Foundations', description: 'Created detailed threat profiles for aerospace batteries in commercial aircraft and eVTOLs, modeling attack vectors like CAN spoofing, signal manipulation, and false SOC injections.', type: 'cyber' },
+  { year: 'Q2 2026', title: 'Secure Telemetry & MQTT Pipelines', subtitle: 'Data Flow Hardening', description: 'Designed and deployed secure telematics pipelines using MQTT over TLS and certificate-based client verification, preventing man-in-the-middle telemetry spoofing.', type: 'cyber' },
+  { year: 'Q3 2026', title: 'AI-Based Intrusion Detection', subtitle: 'Predictive Threat Analysis', description: 'Built machine learning threat classifiers to analyze battery telemetry, training models to identify anomalous sensor readings and flag threat vectors with under 15ms latency.', type: 'career' },
+  { year: 'Q4 2026', title: 'Post-Quantum & Hardware Security', subtitle: 'Future-Ready Protection', description: 'Simulated NIST Post-Quantum Cryptography (Kyber/Dilithium) to secure long-term satellite telemetry datasets, optimizing cryptographic overhead for space-grade processors.', type: 'cyber' }
 ];

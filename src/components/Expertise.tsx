@@ -5,84 +5,84 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldAlert, Eye, Search, HeartPulse, Hammer, Shield } from 'lucide-react';
 
 const workflowTabs = [
-  { id: 'threat-flow', label: 'Attack-to-Defense Pipeline' },
-  { id: 'soc-triage', label: 'SOC SIEM Triaging Pipeline' },
-  { id: 'dpdpa-compliance', label: 'DPDPA 2023 Compliance Pipeline' },
+  { id: 'threat-flow', label: 'Battery Threat Pipeline' },
+  { id: 'soc-triage', label: 'Digital Twin Threat Triaging' },
+  { id: 'dpdpa-compliance', label: 'Compliance & Safety Standards' },
 ];
 
 const threatFlowStages = [
   {
     step: '01',
-    name: 'Reconnaissance',
-    attack: 'Nmap footprinting & subdomain scans to identify open ports.',
-    defense: 'Firewall log monitoring & traffic inspection via Wireshark.',
-    remediation: 'Disable unused protocols, segment subnets, and configure iptables rules.',
+    name: 'Telemetry Tampering',
+    attack: 'Manipulating battery temperature sensor feedback via signal spoofing.',
+    defense: 'Digital twin runs real-time electrochemical simulations to detect sensor mismatch.',
+    remediation: 'Flag anomaly, isolate compromised sensor channel, and switch to twin virtual sensors.',
     icon: Eye,
   },
   {
     step: '02',
-    name: 'Access Bypass',
-    attack: 'SQLi or Authentication Bypass payloads modified in Burp Suite.',
-    defense: 'Application server access logs triaged for atypical query patterns.',
-    remediation: 'Implement parameterized SQL queries & strong input validation controls.',
+    name: 'BMS Bus Spoofing',
+    attack: 'Injecting false State of Charge (SOC) or voltage limits over CAN/ARINC 825 bus.',
+    defense: 'Bus intrusion detection system monitors signal frequencies and identifies spoofed IDs.',
+    remediation: 'Apply message authentication codes (MAC), filter anomalous frames, and reset the bus.',
     icon: ShieldAlert,
   },
   {
     step: '03',
-    name: 'Privilege Escalation',
-    attack: 'IDOR exploitation via object reference (e.g. basketId) manipulation.',
-    defense: 'API gateway logs checked for token-to-user identifier mismatch.',
-    remediation: 'Implement strong server-side authorization validations on all REST routes.',
+    name: 'OTA Update Hijack',
+    attack: 'Deploying malicious BMS firmware modifications via fake Over-The-Air update channels.',
+    defense: 'Secure boot validation and cryptographic certificate verification verify firmware authenticity.',
+    remediation: 'Reject signature mismatch, log threat event, and roll back to golden image.',
     icon: Search,
   },
   {
     step: '04',
-    name: 'Data Exfiltration',
-    attack: 'Exploiting API BOLA endpoints to fetch bulk user records.',
-    defense: 'Volume anomaly alert thresholds triggered in SIEM environment.',
-    remediation: 'Implement API gateway rate-limiting, egress controls, and telemetry alerts.',
+    name: 'API & Command Injection',
+    attack: 'Flooding the ground control API with invalid battery diagnostics commands to disable telemetry.',
+    defense: 'API Gateway rate-limiting and behavior anomaly detection flag anomalous request bursts.',
+    remediation: 'Drop offending IPs, enable active request caching, and prompt secondary MFA verification.',
     icon: HeartPulse,
   },
 ];
 
 const socTriageSteps = [
   {
-    title: '1. Anomalous Telemetry',
-    desc: 'Anomalous network packets (e.g., DNS exfiltration spikes) are captured by sensors.',
-    logs: 'DNS Server logs / Wireshark telemetry',
+    title: '1. Telemetry Ingestion & Encryption',
+    desc: 'BMS collects voltage, current, and temperature, transmitting them via secure MQTT over TLS.',
+    logs: 'Secure Edge Telemetry Packets',
   },
   {
-    title: '2. SIEM Log Ingestion',
-    desc: 'Logs from firewalls, servers, and routers are forwarded and indexed inside Splunk.',
-    logs: 'Splunk search indexes & indexers',
+    title: '2. Digital Twin Synchronization',
+    desc: 'Real-time physics-informed AI models update battery state and predict SOH/RUL.',
+    logs: 'Digital Twin Execution Records',
   },
   {
-    title: '3. Correlation Alert Trigger',
-    desc: 'SIEM rules correlate logs to detect exploitation attempts (e.g., matching a high-severity REST path scan).',
-    logs: 'Splunk Correlation Searches / Alert rules',
+    title: '3. Intrusion Detection Check',
+    desc: 'Anomalous signals or physical parameter deviations trigger the threat classifier engine.',
+    logs: 'AI IDS Alert Log & Threat Index',
   },
   {
-    title: '4. Analyst Triage & Escalation',
-    desc: 'SOC Analyst analyzes packet payloads, queries VirusTotal IOCs, and generates a formal VAPT escalation report.',
-    logs: 'VAPT Remediation Guide / Incident playbook',
+    title: '4. Fail-Safe Activation',
+    desc: 'Ground control initiates automated safety checklists, reducing battery charge limits to prevent thermal runaways.',
+    logs: 'Mission Control Fail-Safe Audits',
   },
 ];
 
 const dpdpaPrinciples = [
   {
-    rule: 'Data Minimization',
-    desc: 'Processing only what is required for consent fulfillment.',
-    technical: 'Restricting sensitive endpoints (like Juice Shop scoreboard) to certified users.',
+    rule: 'DO-356 Airworthiness Cyber',
+    desc: 'Ensuring the aircraft\'s energy storage systems are resilient to external threat actors.',
+    technical: 'Implementing strict network segmentation between BMS network, avionics, and remote telemetry.',
   },
   {
-    rule: 'Security Safeguards',
-    desc: 'Data Fiduciaries must implement safety controls to prevent data leaks.',
-    technical: 'Encrypting JWT tokens, parameterizing database queries, and setting SameSite cookies.',
+    rule: 'ISO 21434 Security Lifecycle',
+    desc: 'Managing cybersecurity risk across the design, production, and operation of aerospace batteries.',
+    technical: 'Conducting continuous threat analysis and risk assessment (TARA) throughout the system lifetime.',
   },
   {
-    rule: 'Compliance Mapping',
-    desc: 'Auditing data flows to ensure user privacy is safeguarded.',
-    technical: 'Logging data read/write trails, documenting BOLA vectors, and drafting privacy reports.',
+    rule: 'UNECE R156 SUMS Standard',
+    desc: 'Securing over-the-air firmware updates and updates management systems.',
+    technical: 'Enforcing dual-signature verification, hash validation, and automated firmware rollbacks on failure.',
   },
 ];
 

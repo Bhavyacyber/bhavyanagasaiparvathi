@@ -15,10 +15,10 @@ export default function Timeline() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-xs font-mono text-accent uppercase tracking-widest text-glow">
-            Career Chronology
+            Platform Chronology
           </h2>
           <h3 className="text-3xl sm:text-4xl font-bold text-white mt-2 font-sans tracking-tight">
-            Journey & Practical Experience
+            Development & Research Roadmap
           </h3>
           <div className="w-12 h-1 bg-accent mx-auto mt-4 rounded-full" />
         </div>
@@ -34,7 +34,7 @@ export default function Timeline() {
             }`}
           >
             <Compass className="w-4 h-4" />
-            Learning Journey & Milestones
+            Milestones & R&D Phase
           </button>
           <button
             onClick={() => setActiveTab('experience')}
@@ -45,7 +45,7 @@ export default function Timeline() {
             }`}
           >
             <Briefcase className="w-4 h-4" />
-            Professional Experience (Internship)
+            Platform Integration & Deployments
           </button>
         </div>
 
@@ -123,7 +123,7 @@ export default function Timeline() {
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-900/60 pb-4">
                       <div>
                         <span className="font-mono text-xs text-accent uppercase tracking-widest">
-                          Professional Records
+                          Platform Integration Records
                         </span>
                         <h4 className="text-xl font-bold text-white font-mono uppercase tracking-wide mt-1">
                           {exp.role} <span className="text-slate-500 font-light">@</span> {exp.company}
@@ -169,11 +169,11 @@ export default function Timeline() {
                       </ul>
                     </div>
 
-                    {/* Recruiter Lesson Callout */}
+                    {/* Architectural Lesson Callout */}
                     <div className="p-4 rounded-lg bg-slate-900 border border-slate-800 text-xs font-sans text-slate-350 leading-relaxed relative overflow-hidden">
                       <div className="absolute top-0 left-0 bottom-0 w-[4px] bg-accent" />
                       <span className="font-mono text-[9px] text-accent uppercase tracking-wider block mb-1">
-                        Analyst Retrospective
+                        Architectural Retrospective
                       </span>
                       {exp.lessonsLearned}
                     </div>

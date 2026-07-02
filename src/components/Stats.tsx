@@ -8,26 +8,26 @@ import { portfolioStats } from '../data/portfolioData';
 const statItems = [
   {
     value: portfolioStats.certificationsCount,
-    label: 'Industry Credentials',
-    desc: 'ISC², Coursera, Wallarm, & DPDPA certs',
+    label: 'Standards Compliances',
+    desc: 'DO-178C, DO-254, DO-356, ISO 21434 & UNECE',
     icon: Award,
   },
   {
     value: portfolioStats.vulnerabilitiesFound,
-    label: 'Vulnerabilities Triaged',
-    desc: 'SQLi, XSS, BOLA, IDOR, & SSRF flaws',
+    label: 'Threat Vectors Cataloged',
+    desc: 'CAN spoofing, firmware updates, & telemetry anomalies',
     icon: ShieldAlert,
   },
   {
     value: portfolioStats.vaptReportsDelivered,
-    label: 'Delivered VAPT Reports',
-    desc: 'Formal industry-standard reports with CVSS',
+    label: 'Security Audits Completed',
+    desc: 'Formal industry-standard compliance reports',
     icon: FileSearch,
   },
   {
     value: portfolioStats.labMachinesSegmented,
-    label: 'Network Labs Segmented',
-    desc: 'Ubuntu, Kali, iptables & UFW segmented subnets',
+    label: 'Target Battery Systems',
+    desc: 'Aircraft, UAV, drone, satellite, & eVTOL systems',
     icon: Network,
   },
 ];

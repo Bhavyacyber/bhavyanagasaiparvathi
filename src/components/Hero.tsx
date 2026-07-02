@@ -2,25 +2,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Shield, FileText, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin, BatteryCharging, Satellite, Plane, Cpu, Cloud, Activity, Radio } from 'lucide-react';
 import { heroData } from '../data/portfolioData';
-
-// Custom inline SVG icons for brands (Github and Linkedin)
-const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    <path d="M9 18c-4.51 2-5-2-7-2" />
-  </svg>
-);
-
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -138,11 +121,11 @@ export default function Hero() {
     };
   }, []);
 
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
+  const handleScrollTo = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
       const offset = 80;
-      const elementPosition = contactSection.getBoundingClientRect().top;
+      const elementPosition = section.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({
         top: offsetPosition,
@@ -178,7 +161,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-tight font-sans"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-sans"
               >
                 {heroData.name}
               </motion.h1>
@@ -187,7 +170,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-lg sm:text-2xl font-mono text-accent tracking-wide font-semibold text-glow"
+                className="text-lg sm:text-xl font-mono text-accent tracking-wide font-semibold text-glow"
               >
                 {heroData.role} <span className="text-slate-500 font-light">|</span> {heroData.specialization}
               </motion.div>
@@ -228,61 +211,139 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4"
+              className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4 w-full"
             >
-              <a
-                href={heroData.resumeUrl}
-                download="Bhavya_Parvathi_Resume.pdf"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-accent text-slate-950 font-mono text-sm font-bold hover:bg-[#00d0ff] hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-all duration-300 flex items-center justify-center gap-2 border border-accent cursor-pointer"
-              >
-                <FileText className="w-4 h-4" />
-                Download Resume
-              </a>
               <button
-                onClick={handleScrollToContact}
-                className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-slate-950 text-slate-300 font-mono text-sm font-semibold hover:text-white hover:bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                onClick={() => handleScrollTo('about')}
+                className="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-accent text-slate-950 font-mono text-xs font-bold hover:bg-[#00d0ff] hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-all duration-300 flex items-center justify-center gap-2 border border-accent cursor-pointer uppercase tracking-wider"
               >
-                Get In Touch
+                Explore Platform
+              </button>
+              <button
+                onClick={() => handleScrollTo('expertise')}
+                className="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-slate-950 text-slate-350 font-mono text-xs font-semibold hover:text-white hover:bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer uppercase tracking-wider"
+              >
+                View Architecture
+              </button>
+              <button
+                onClick={() => handleScrollTo('projects')}
+                className="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-slate-950 text-slate-350 font-mono text-xs font-semibold hover:text-white hover:bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer uppercase tracking-wider"
+              >
+                Live Dashboard
               </button>
             </motion.div>
           </div>
 
-          {/* Cyber Graphic / Shield Hub */}
-          <div className="lg:col-span-4 flex items-center justify-center">
+          {/* Aerospace Platform Premium Graphic / Glassmorphic Card */}
+          <div className="lg:col-span-4 flex items-center justify-center relative py-8">
             <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center"
+              className="relative w-full max-w-sm aspect-[4/3] sm:aspect-square rounded-2xl glass-panel border border-slate-800/85 p-3 shadow-[0_0_50px_rgba(0,240,255,0.08)] bg-slate-950/40 backdrop-blur-md overflow-visible flex items-center justify-center group hover:border-accent/30 transition-all duration-500"
             >
-              {/* Outer Pulsing Glow */}
-              <div className="absolute inset-0 rounded-full border border-accent/20 animate-[ping_4s_ease-in-out_infinite]" />
-              {/* Spinning Ring */}
-              <div className="absolute inset-4 rounded-full border border-dashed border-accent/30 animate-[spin_25s_linear_infinite]" />
-              {/* Secondary Counter-Spinning Ring */}
-              <div className="absolute inset-10 rounded-full border border-dotted border-slate-700 animate-[spin_15s_linear_infinite_reverse]" />
-              {/* Core Shield */}
-              <div className="absolute w-36 h-36 sm:w-44 sm:h-44 rounded-full glass-panel flex flex-col items-center justify-center border border-accent/30 shadow-[inset_0_0_20px_rgba(0,240,255,0.1)]">
-                <Shield className="w-12 h-12 text-accent animate-pulse" />
-                <span className="text-[10px] font-mono text-slate-500 uppercase mt-2 tracking-widest">
-                  Secure Hub
-                </span>
-                <span className="text-[9px] font-mono text-accent uppercase tracking-widest text-glow mt-1">
-                  Active Defense
-                </span>
+              {/* Card Glow Background */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+              
+              {/* Inner frame with glow */}
+              <div className="relative w-full h-full rounded-xl overflow-hidden border border-slate-900/60 shadow-[inset_0_0_20px_rgba(0,0,0,0.6)]">
+                <img
+                  src="/hero-aerospace.png"
+                  alt="Aerospace Battery Cybersecurity Architecture"
+                  className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
+                />
+                
+                {/* Dark Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#060a13] via-transparent to-transparent opacity-60 pointer-events-none" />
+                
+                {/* Soft blue corner accents */}
+                <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-accent/40" />
+                <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-accent/40" />
+                <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-accent/40" />
+                <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-accent/40" />
               </div>
 
-              {/* Floaters (Icons showing channels) */}
-              <div className="absolute top-4 left-4 p-2 rounded-lg glass-panel border border-slate-800 flex items-center justify-center">
-                <a href={heroData.linkedinUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-accent transition-colors">
-                  <LinkedinIcon className="w-5 h-5" />
-                </a>
-              </div>
-              <div className="absolute bottom-4 right-4 p-2 rounded-lg glass-panel border border-slate-800 flex items-center justify-center">
-                <a href={heroData.githubUrl} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-accent transition-colors">
-                  <GithubIcon className="w-5 h-5" />
-                </a>
-              </div>
+              {/* Floating Animated Elements */}
+              {/* 1. Battery Icon */}
+              <motion.div
+                animate={{ y: [0, -8, 0], x: [0, 4, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-6 -left-6 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent shadow-[0_0_15px_rgba(0,240,255,0.2)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Battery Diagnostics"
+              >
+                <BatteryCharging className="w-5 h-5" />
+              </motion.div>
+
+              {/* 2. Satellite Icon */}
+              <motion.div
+                animate={{ y: [0, 8, 0], x: [0, -6, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                className="absolute -top-8 right-6 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent/80 shadow-[0_0_15px_rgba(0,240,255,0.15)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Satellite Telemetry"
+              >
+                <Satellite className="w-5 h-5" />
+              </motion.div>
+
+              {/* 3. Drone / UAV Icon */}
+              <motion.div
+                animate={{ y: [0, -6, 0], x: [0, -5, 0] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                className="absolute top-1/4 -right-8 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent/85 shadow-[0_0_15px_rgba(0,240,255,0.15)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="UAV / Drone Integration"
+              >
+                <Plane className="w-5 h-5 -rotate-45" />
+              </motion.div>
+
+              {/* 4. AI Icon */}
+              <motion.div
+                animate={{ y: [0, 7, 0], x: [0, 5, 0] }}
+                transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+                className="absolute bottom-1/4 -left-8 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent shadow-[0_0_15px_rgba(0,240,255,0.2)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Predictive AI"
+              >
+                <Cpu className="w-5 h-5" />
+              </motion.div>
+
+              {/* 5. Cybersecurity Icon */}
+              <motion.div
+                animate={{ y: [0, -9, 0], x: [0, 3, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                className="absolute -bottom-6 -right-4 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent shadow-[0_0_20px_rgba(0,240,255,0.25)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Active Threat Defense"
+              >
+                <Shield className="w-5 h-5" />
+              </motion.div>
+
+              {/* 6. Cloud Icon */}
+              <motion.div
+                animate={{ y: [0, 5, 0], x: [0, -4, 0] }}
+                transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+                className="absolute -bottom-8 left-12 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent/75 shadow-[0_0_15px_rgba(0,240,255,0.15)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Cloud Analytics"
+              >
+                <Cloud className="w-5 h-5" />
+              </motion.div>
+
+              {/* 7. Digital Twin Icon */}
+              <motion.div
+                animate={{ y: [0, -5, 0], x: [0, 6, 0] }}
+                transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+                className="absolute top-1/2 -left-10 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent/90 shadow-[0_0_15px_rgba(0,240,255,0.18)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Digital Twin Sync"
+              >
+                <Activity className="w-5 h-5" />
+              </motion.div>
+
+              {/* 8. Mission Control Icon */}
+              <motion.div
+                animate={{ y: [0, 6, 0], x: [0, -5, 0] }}
+                transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut", delay: 1.7 }}
+                className="absolute bottom-1/3 -right-10 p-2.5 rounded-xl glass-panel border border-slate-800 text-accent/90 shadow-[0_0_15px_rgba(0,240,255,0.18)] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm z-20"
+                title="Mission Control Gateway"
+              >
+                <Radio className="w-5 h-5" />
+              </motion.div>
+
             </motion.div>
           </div>
 
