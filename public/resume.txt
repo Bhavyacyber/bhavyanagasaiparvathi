@@ -1,0 +1,30 @@
+Cybersecurity Professional
+
+Blue Team Operations with Offensive Validation
+
+Professional Summary
+A cybersecurity-focused professional with a strong foundation in security operations, web/API security, vulnerability assessment, and professional reporting. Interested in roles that combine analytical thinking, structured documentation, and practical defensive readiness.
+
+Core Strengths
+- SOC-oriented thinking and alert triage
+- Web and API security assessment
+- Structured reporting and documentation
+- Threat awareness and risk communication
+- Engineering-driven problem solving
+
+Focus Areas
+- Defensive operations and detection workflows
+- Security testing and validation
+- Documentation and reporting
+- Continuous learning in modern security practices
+
+Selected Projects
+- Threat Detection Lab: Built a structured detection environment supported by evidence-based reporting.
+- API Security Assessment: Validated application-layer weaknesses and documented remediation guidance.
+- VAPT Reporting Sprint: Translated findings into clear risk communication and reporting.
+
+Certifications
+- Certified SOC Analyst (In Progress)
+- Web Security Fundamentals (Completed)
+- API Security Essentials (Completed)
+- Security Documentation & Reporting (Completed)

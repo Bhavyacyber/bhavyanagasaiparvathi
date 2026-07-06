@@ -1,0 +1,11 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Battery } from 'lucide-react';
+export default function SplashScreen({ onComplete }) {
+    useEffect(() => {
+        const timer = setTimeout(onComplete, 3500);
+        return () => clearTimeout(timer);
+    }, [onComplete]);
+    return (_jsxs("div", { className: "min-h-screen bg-gradient-to-br from-primary-900 via-primary-800 to-primary-950 flex items-center justify-center overflow-hidden", children: [_jsx(motion.div, { className: "absolute w-96 h-96 bg-primary-500 rounded-full blur-3xl opacity-20", animate: { x: [0, 100, 0], y: [0, 50, 0] }, transition: { duration: 8, repeat: Infinity } }), _jsx(motion.div, { className: "absolute w-96 h-96 bg-accent-emerald rounded-full blur-3xl opacity-20", animate: { x: [0, -100, 0], y: [0, -50, 0] }, transition: { duration: 10, repeat: Infinity } }), _jsxs("div", { className: "relative z-10 text-center", children: [_jsx(motion.div, { initial: { scale: 0, opacity: 0 }, animate: { scale: 1, opacity: 1 }, transition: { duration: 0.8, type: 'spring' }, className: "mb-8", children: _jsx("div", { className: "w-24 h-24 mx-auto bg-gradient-to-br from-primary-500 to-accent-emerald rounded-3xl flex items-center justify-center shadow-glow-lg", children: _jsx(Battery, { className: "w-12 h-12 text-white" }) }) }), _jsxs(motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8, delay: 0.3 }, children: [_jsx("h1", { className: "text-5xl font-bold text-white mb-2", children: "BPAS" }), _jsx("p", { className: "text-xl text-primary-300 mb-8", children: "Battery Pack Aadhaar System" }), _jsx("p", { className: "text-primary-400 text-sm max-w-md mx-auto", children: "Enterprise Cybersecurity Platform for EV Battery Digital Identity" })] }), _jsx(motion.div, { className: "mt-12 flex justify-center gap-2", initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.8, delay: 0.8 }, children: [0, 1, 2].map((i) => (_jsx(motion.div, { className: "w-2 h-2 bg-primary-500 rounded-full", animate: { scale: [1, 1.5, 1] }, transition: { duration: 1.4, repeat: Infinity, delay: i * 0.2 } }, i))) })] })] }));
+}
