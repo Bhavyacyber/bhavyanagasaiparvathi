@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, BookOpen, BrainCircuit, Download, FileText, Lock, Radar, ScanLine, Shield, TerminalSquare, Workflow } from 'lucide-react'
+import { ArrowRight, BookOpen, BrainCircuit, Download, FileText, Lock, Radar, Shield, TerminalSquare } from 'lucide-react'
 import { Card, Header } from '../components/Card'
 
 const focusAreas = [
@@ -110,56 +110,51 @@ export default function PortfolioScreen() {
           <div className="pointer-events-none absolute -left-12 top-8 h-[360px] w-[360px] rounded-full bg-primary-500/15 blur-3xl" />
           <div className="pointer-events-none absolute right-0 top-24 h-[260px] w-[260px] rounded-full bg-violet-500/15 blur-3xl" />
 
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-500/30 bg-primary-500/10 px-3 py-1 text-sm text-primary-300">
-                <Shield className="h-4 w-4" />
-                Blue Team Operations · Offensive Security Validation
-              </div>
-              <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-                Cybersecurity professional focused on defensive operations, web/API security, and clear reporting.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                The profile is built around practical security thinking: structured documentation, security testing awareness, and a calm approach to operations and validation.
-              </p>
+          <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center">
+              <motion.div className="lg:col-span-2" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                <div className="mb-4 inline-flex items-center gap-3">
+                  <span className="eyebrow">Blue Team · Offensive Validation</span>
+                </div>
+                <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">Practical SOC-ready security with clear reporting and validation.</h1>
+                <p className="mt-4 text-lg text-slate-300 max-w-2xl">I build defensible detection logic, validate application and API risks, and document findings so teams can act quickly.</p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="/resume.txt" download className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-5 py-3 font-medium text-white transition hover:bg-primary-400">
-                  <Download className="h-4 w-4" /> Download Resume
-                </a>
-                <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 font-medium text-slate-200 transition hover:bg-white/10">
-                  <FileText className="h-4 w-4" /> View Contact
-                </a>
-              </div>
-            </motion.div>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a href="/resume.txt" download className="btn-primary inline-flex items-center gap-2"><Download className="h-4 w-4" /> Resume</a>
+                  <a href="#contact" className="btn-outline inline-flex items-center gap-2"><FileText className="h-4 w-4" /> Contact</a>
+                </div>
 
-            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
-              <Card className="relative overflow-hidden p-8">
-                <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-br from-primary-500/12 to-transparent" />
-                <div className="relative z-10 space-y-5">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-2xl bg-primary-500/15 p-3 text-primary-300">
-                      <Radar className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Positioning</p>
-                      <p className="text-lg font-semibold text-white">Defensive operations with security validation</p>
-                    </div>
+                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-2xl bg-slate-900/60 p-4">
+                    <p className="text-sm text-slate-400">Focus</p>
+                    <p className="mt-2 font-semibold">Detection & Triage</p>
                   </div>
-
-                  <div className="space-y-3 text-sm text-slate-300">
-                    <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                      <div className="mb-2 flex items-center gap-2 text-primary-300"><ScanLine className="h-4 w-4" /> Verification mindset</div>
-                      <p>Focused on validating weaknesses and communicating findings clearly.</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                      <div className="mb-2 flex items-center gap-2 text-primary-300"><Workflow className="h-4 w-4" /> Operational readiness</div>
-                      <p>Built around structured investigation, reporting, and security awareness.</p>
-                    </div>
+                  <div className="rounded-2xl bg-slate-900/60 p-4">
+                    <p className="text-sm text-slate-400">Strength</p>
+                    <p className="mt-2 font-semibold">Reporting & Validation</p>
+                  </div>
+                  <div className="rounded-2xl bg-slate-900/60 p-4">
+                    <p className="text-sm text-slate-400">Tools</p>
+                    <p className="mt-2 font-semibold">Burp · Splunk · Python</p>
                   </div>
                 </div>
-              </Card>
-            </motion.div>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+                <div className="card p-6 flex flex-col items-center text-center">
+                  <div className="h-36 w-36 overflow-hidden rounded-full border border-white/10 bg-slate-800">
+                    <img src="/profile.jpg" alt="Profile" className="h-full w-full object-cover" />
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold">Your Name</h3>
+                  <p className="mt-1 text-sm text-slate-400">SOC Analyst / Blue Team • Offensive validation</p>
+                  <div className="mt-4 flex gap-3">
+                    <a href="https://github.com" target="_blank" rel="noreferrer" className="text-sm text-slate-300">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-sm text-slate-300">LinkedIn</a>
+                  </div>
+                </div>
+                <p className="mt-3 text-xs text-slate-400">Place the attached photo at <span className="font-mono text-slate-200">/public/profile.jpg</span> — the page will display it automatically.</p>
+              </motion.div>
+            </div>
           </div>
         </section>
 
