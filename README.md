@@ -1,248 +1,120 @@
-# Battery Pack Aadhaar System (BPAS) - Mobile App Prototype
+# Bhavya Parvathi Personal Branding Website
 
-Premium Android/iOS mobile application prototype for an EV Battery Aadhaar Cybersecurity Platform. This is a production-ready React + TypeScript web application with enterprise-grade design and interactive navigation.
+Production-ready personal portfolio for a cybersecurity-focused professional. The content is derived from the attached resume text only, with no invented employers, dates, metrics, tools, or contact details.
 
-## 🎯 Project Features
+## Stack
 
-### Core Screens (16+ Fully Connected)
-- **Splash Screen** - Premium animated introduction
-- **Login Screen** - Multi-step authentication (Email → Password → OTP → Biometric)
-- **Dashboard** - Central hub with battery health metrics and quick actions
-- **Battery Identity** - Complete digital battery identification and verification
-- **QR Scan & Verification** - Real-time QR code scanning with authentic/fake/tampered detection
-- **Cybersecurity Dashboard** - Zero Trust security monitoring with threat analytics
-- **Security Scan** - Full system vulnerability analysis
-- **Security Scan Progress** - Real-time scanning visualization
-- **Security Scan Report** - Comprehensive threat analysis results
-- **AI Battery Health** - Machine learning-based degradation prediction
-- **Digital Battery Passport** - Complete lifecycle documentation
-- **Ownership Transfer** - Blockchain-verified ownership transfer with OTP
-- **Service History** - Complete maintenance timeline
-- **Incident Timeline** - Cybersecurity event history
-- **Notifications** - Real-time alert management
-- **Emergency Lock** - Immediate battery immobilization
-- **Profile** - User account management
-- **Settings** - Security and notification preferences
-- **Admin Dashboard** - Fleet management and analytics
-- **AI Chatbot** - 24/7 intelligent assistant
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- shadcn/ui-style primitives
+- Framer Motion
+- Lucide React
+- next-themes for dark/light mode
 
-## 🎨 Design System
+## Content Strategy
 
-### Color Palette
-- **Primary**: Navy Blue (#0f1626 - #4f6dff)
-- **Accent**: Emerald Green (#10b981)
-- **Neutral**: White, Dark Gray
-- **Alerts**: Red, Yellow, Orange
+The resume presents Bhavya as an early-career cybersecurity professional focused on:
 
-### Design Features
-- Glassmorphism effects with backdrop blur
-- Soft shadows and rounded cards
-- Premium gradients
-- Smooth animations (300-400ms transitions)
-- Modern typography (Inter, SF Pro)
-- Dark theme with enterprise polish
-- Responsive design (mobile, tablet, desktop)
+- SOC-oriented thinking and alert triage
+- Web/API security assessment
+- Vulnerability assessment and offensive validation
+- Structured reporting, remediation guidance, and risk communication
+- Continuous learning toward modern defensive operations
 
-## 🚀 Technology Stack
+The website intentionally avoids overclaiming production incident response, employer history, exact platforms, or quantitative outcomes because those details are not present in the source resume.
 
-- **Frontend**: React 18.2 + TypeScript 5.3
-- **Build Tool**: Vite 5.0
-- **Styling**: Tailwind CSS 3.4
-- **Animations**: Framer Motion 10.16
-- **Routing**: React Router DOM 6.20
-- **Charts**: Recharts 2.10
-- **Icons**: Lucide React 0.327
-- **Utilities**: date-fns 2.30, clsx 2.0
+## Getting Started
 
-## 📦 Installation
+Install dependencies:
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-
-### Setup Steps
-
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-   The app will automatically open at `http://localhost:3000`
-
-3. **Build for Production**
-   ```bash
-   npm run build
-   ```
-
-4. **Preview Production Build**
-   ```bash
-   npm run preview
-   ```
-
-## 🔐 Security Features
-
-- Zero Trust Dashboard with real-time threat monitoring
-- Certificate Management and validation
-- Firmware Signature Verification
-- OTA (Over-The-Air) security validation
-- Threat Intelligence Feed visualization
-- Digital Forensics Report generation
-- ISO 21434 / UNECE R155 / IEC 62443 compliance tracking
-- Blockchain Audit Logs with hash verification
-- Device Trust Score calculation
-- Tamper Detection and alerts
-- Replay Attack Detection
-- CAN Injection Detection
-- QR Clone Detection
-- Battery Theft Reporting
-
-## 📊 Dashboard Features
-
-### Battery Metrics
-- State of Health (SOH) with degradation trends
-- State of Charge (SOC) real-time tracking
-- Charge Cycle counting and predictions
-- Temperature monitoring
-- Voltage/Current analysis
-
-### Cybersecurity Monitoring
-- CAN Bus security analysis
-- Firmware integrity verification
-- Bluetooth/NFC security scanning
-- GPS spoofing detection
-- OTA update security validation
-- Secure boot verification
-- Encryption standards validation
-- Runtime protection monitoring
-- Malware detection scanning
-
-### Analytics & Insights
-- Attack vector distribution charts
-- Threat timeline visualization
-- Live attack radar
-- Battery charging animations
-- Shield pulse animations
-- Loading state transitions
-- Toast notifications
-- Bottom sheet modals
-
-## 🔄 Navigation Flow
-
-```
-Splash Screen ↓
-Login Screen (Email → Password → OTP → Biometric) ↓
-Dashboard ↔ Quick Actions
-├─ Battery Identity
-├─ QR Scan → Verification Result
-├─ Cybersecurity → Security Scan → Progress → Report
-├─ Battery Health (AI predictions)
-├─ Battery Passport → Download PDF
-├─ Ownership Transfer → OTP → Verification
-├─ Service History
-├─ Incident Timeline
-├─ Notifications
-├─ Emergency Lock
-├─ Profile → Settings → MFA/Biometric
-├─ Admin Dashboard (Fleet analytics)
-└─ AI Chatbot (24/7 support)
+```bash
+npm install
 ```
 
-## 🎬 Animation Features
+Start the development server:
 
-- **Smart Animate**: 300-400ms transitions
-- **Loading States**: Spinner animations
-- **Toast Notifications**: Slide-in alerts
-- **Modal Animations**: Scale and fade effects
-- **Chart Animations**: Progressive data visualization
-- **Shield Pulse**: Security indicator animations
-- **Battery Charging**: Progressive fill animations
-- **Radar Sweeps**: Attack vector scanning effects
-
-## 📱 Responsive Design
-
-- **Mobile**: Optimized for 375px - 667px
-- **Tablet**: Optimized for 768px - 1024px
-- **Desktop**: Optimized for 1025px+
-- Touch-friendly interface with adequate padding
-- Readable typography at all breakpoints
-
-## 🏗️ Project Structure
-
-```
-src/
-├── main.tsx              # React entry point
-├── index.css             # Global styles & Tailwind
-├── App.tsx               # Main app with routing
-├── components/
-│   ├── Card.tsx          # Card components
-│   ├── Layout.tsx        # Layout wrapper
-│   └── [other components]
-├── hooks/
-│   └── useAuth.ts        # Auth context hook
-└── screens/
-    ├── SplashScreen.tsx
-    ├── LoginScreen.tsx
-    ├── DashboardScreen.tsx
-    ├── [16+ screen files...]
-    └── ChatbotScreen.tsx
+```bash
+npm run dev
 ```
 
-## 🔑 Key Functionalities
+Open `http://localhost:3000`.
 
-### Authentication Flow
-1. Email verification
-2. Password entry
-3. OTP validation
-4. Biometric authentication
-5. Persistent session
+## Quality Checks
 
-### Battery Security
-1. Real-time health monitoring
-2. AI-based degradation prediction
-3. Blockchain hash verification
-4. Digital signature validation
-5. QR code authentication
+Run TypeScript:
 
-### Ownership Management
-1. Multi-step transfer process
-2. OTP confirmation
-3. Blockchain registration
-4. Digital signature update
-5. Owner notification
+```bash
+npm run type-check
+```
 
-### Security Scanning
-1. 8-module comprehensive analysis
-2. Real-time progress tracking
-3. Detailed vulnerability reports
-4. Actionable recommendations
-5. PDF export capability
+Create a production build:
 
-## 🎯 Next Steps for Production
+```bash
+npm run build
+```
 
-- [ ] Backend API integration
-- [ ] Real authentication with JWT tokens
-- [ ] Database setup (MongoDB/PostgreSQL)
-- [ ] Blockchain integration (Ethereum/Hyperledger)
-- [ ] Push notification service (Firebase)
-- [ ] Analytics tracking
-- [ ] Performance optimization
-- [ ] Security audit
-- [ ] App store deployment (iOS/Android via React Native)
-- [ ] Load testing
-- [ ] Accessibility audit (WCAG compliance)
+Start the production server after building:
 
-## 📄 License
+```bash
+npm run start
+```
 
-Proprietary - Battery Pack Aadhaar System (BPAS)
+## Deployment
 
-## 🤝 Support
+The project is ready for Vercel or any Node-compatible host.
 
-For issues, feature requests, or questions, please contact the development team.
+Recommended Vercel settings:
 
----
+- Framework preset: `Next.js`
+- Build command: `npm run build`
+- Output: Next.js default
+- Environment variable: `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
+- Optional contact variables: `NEXT_PUBLIC_CONTACT_EMAIL` and `NEXT_PUBLIC_LINKEDIN_URL`
 
-**BPAS v1.0** - Enterprise Cybersecurity Platform for EV Battery Digital Identity
+`NEXT_PUBLIC_SITE_URL` is used by metadata, `robots.txt`, and `sitemap.xml`. If omitted, the app falls back to `https://bhavya-parvathi.dev`.
+
+## SEO and Accessibility
+
+Implemented:
+
+- Static metadata and Open Graph images
+- Twitter card metadata
+- `robots.txt`
+- `sitemap.xml`
+- Person structured data
+- Semantic sections and headings
+- Accessible buttons and labels
+- Keyboard-friendly links and controls
+- Responsive dark and light themes
+
+## Project Structure
+
+```text
+app/
+  globals.css
+  layout.tsx
+  page.tsx
+  robots.ts
+  sitemap.ts
+components/
+  motion.tsx
+  theme-provider.tsx
+  theme-toggle.tsx
+  ui/
+lib/
+  site-data.ts
+  utils.ts
+public/
+  profile.jpg
+  resume.pdf
+  resume.txt
+```
+
+## Suggested Resume Improvements
+
+- Add verified email, LinkedIn, GitHub, location, and portfolio links.
+- Add education, dates, credential issuers, and certification completion dates.
+- Add concrete tools only when accurate: SIEM, EDR, API testing, vulnerability scanning, scripting, cloud, ticketing, and reporting tools.
+- Add measurable artifacts where provable: detections, rules, reports, findings, labs, or documented remediations.
+- Link case-study artifacts or sanitized reports to strengthen recruiter trust.

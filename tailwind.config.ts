@@ -1,69 +1,60 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  darkMode: ["class"],
   content: [
-    "./index.html",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          50: '#f0f4ff',
-          100: '#e6ecff',
-          200: '#cdd9ff',
-          300: '#a5baff',
-          400: '#7a94ff',
-          500: '#4f6dff',
-          600: '#3d52d5',
-          700: '#2d3aa8',
-          800: '#1f2666',
-          900: '#0f1626',
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          emerald: '#10b981',
-          danger: '#ef4444',
-          warning: '#f59e0b',
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-        dark: {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          200: '#e5e7eb',
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-          600: '#4b5563',
-          700: '#374151',
-          800: '#1f2937',
-          900: '#111827',
-          950: '#030712',
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
-      backdropBlur: {
-        xs: '2px',
-        sm: '4px',
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        glow: '0 0 20px rgba(79, 109, 255, 0.3)',
-        'glow-lg': '0 0 40px rgba(79, 109, 255, 0.4)',
-        card: '0 8px 32px rgba(0, 0, 0, 0.2)',
-        'card-sm': '0 4px 16px rgba(0, 0, 0, 0.15)',
-      },
-      animation: {
-        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'shield': 'shield 2s ease-in-out infinite',
-      },
-      keyframes: {
-        shield: {
-          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
-          '50%': { opacity: '0.8', transform: 'scale(1.05)' },
-        },
+        "soft-ring": "0 0 0 1px hsl(var(--border)), 0 20px 70px rgba(0, 0, 0, 0.22)",
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        'sf-pro': ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', 'sans-serif'],
+        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
+
+export default config;
